@@ -5,8 +5,8 @@ import org.springframework.stereotype.Service;
 import top.wqp0010.s1.demo.entity.UserEntity;
 
 /**
- * @author: wuqiupeng <qpwu@vw-mobvoi.com>
- * @date: 2018/12/29 11:55
+ * @author: cook
+ * @date: 2019年10月31日23:22:44
  * @description:
  */
 

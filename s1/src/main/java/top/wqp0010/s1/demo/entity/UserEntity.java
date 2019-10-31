@@ -8,8 +8,8 @@ import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
 
 /**
- * @author: wuqiupeng <qpwu@vw-mobvoi.com>
- * @date: 2018/12/29 12:00
+ * @author: cook
+ * @date: 2019年10月31日23:22:44
  * @description:
  */
 

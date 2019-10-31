@@ -6,8 +6,8 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 /**
- * @author: wuqiupeng <qpwu@vw-mobvoi.com>
- * @date: 2018/12/29 14:31
+ * @author: cook
+ * @date: 2019年10月31日23:22:44
  * @description:
  */
 @Configuration

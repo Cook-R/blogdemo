@@ -7,8 +7,8 @@ import top.wqp0010.s1.demo.mapper.UserMapper;
 import top.wqp0010.s1.demo.service.IUserService;
 
 /**
- * @author: wuqiupeng <qpwu@vw-mobvoi.com>
- * @date: 2018/12/29 11:56
+ * @author: cook
+ * @date: 2019年10月31日23:22:44
  * @description:
  */
 @Service

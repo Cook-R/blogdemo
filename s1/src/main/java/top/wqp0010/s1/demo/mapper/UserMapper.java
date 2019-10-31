@@ -4,8 +4,8 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import top.wqp0010.s1.demo.entity.UserEntity;
 
 /**
- * @author: wuqiupeng <qpwu@vw-mobvoi.com>
- * @date: 2018/12/29 14:11
+ * @author: cook
+ * @date: 2019年10月31日23:22:44
  * @description:
  */
 public interface UserMapper extends BaseMapper<UserEntity> {
