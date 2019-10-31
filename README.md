@@ -1,3 +1,3 @@
 # blogdemo
 
-用于博客的练习代码
+spring boot2.1.1 集成 mybatis plus 示例demo
