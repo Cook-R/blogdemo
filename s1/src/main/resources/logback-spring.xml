@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration debug="true">
+  <include resource="org/springframework/boot/logging/logback/defaults.xml"/>
+  <property name="LOG_HOME" value="/data/log"/>
+
+  <!-- log文件格式配置 去掉了彩色 -->
+  <property name="FILE_LOG_PATTERN"
+    value="%d{yyyy-MM-dd HH:mm:ss.SSS} ${LOG_LEVEL_PATTERN:-%5p} [%thread] %c#%M:%L - %msg%n"/>
+
+  <!-- 带色彩的log -->
+  <property name="STDOUT_LOG_PATTERN"
+    value="%clr(%d{yyyy-MM-dd HH:mm:ss.SSS}){faint} %clr(${LOG_LEVEL_PATTERN:-%5p}) [%clr(%thread){magenta}] %clr(%c#%M:%L){cyan} - %msg%n"/>
+
+  <!-- Appender to log to console -->
+  <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+    <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+      <!-- Minimum logging level to be presented in the console logs-->
+      <level>DEBUG</level>
+    </filter>
+    <encoder>
+      <pattern>${STDOUT_LOG_PATTERN}</pattern>
+      <charset>utf8</charset>
+    </encoder>
+  </appender>
+
+<!--  &lt;!&ndash; 按照每天生成日志文件 &ndash;&gt;-->
+<!--  <appender class="ch.qos.logback.core.rolling.RollingFileAppender" name="FILE">-->
+<!--    <file>${LOG_HOME}/demo.log</file>-->
+<!--    <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">-->
+<!--      &lt;!&ndash;日志文件输出的文件名 &ndash;&gt;-->
+<!--      <fileNamePattern>${LOG_HOME}/demo.%d{yyyy-MM-dd}.log-->
+<!--      </fileNamePattern>-->
+<!--      <maxHistory>30</maxHistory>-->
+<!--    </rollingPolicy>-->
+<!--    <encoder>-->
+<!--      <pattern>${FILE_LOG_PATTERN}-->
+<!--      </pattern>-->
+<!--    </encoder>-->
+<!--  </appender>-->
+
+  <root level="INFO">
+    <appender-ref ref="STDOUT"/>
+    <!--
+      <appender-ref ref="FILE"/>
+     -->
+  </root>
+
+</configuration>
